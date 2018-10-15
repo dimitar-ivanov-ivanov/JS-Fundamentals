@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>    
+</head>
+<body> 
+    <h1>JavaScript in te HTML page</h1>
+        <script>
+                function nums(n){
+                    let html = '<ul>\n';
+                    for(let i = 1;i<=n;i++){
+                        let color = i % 2 === 0 ? 'blue' : 'green';
+                        html += `<li><span style='color:${color}'>${i}</span></li>\n`;
+                    }    
+               
+                   html += '</ul>';
+                   return html;
+                }
+                console.log(nums(10));
+                //document.body.innerHTML = nums(10);
+        </script>
+</body>
+</html>
